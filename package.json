@@ -1,6 +1,7 @@
 {
-  "name": "remind-app",
-  "version": "0.1.0",
+  "name": "Cat-Calculator",
+  "version": "0.1.1",
+  "homepage": "http://cringedo.github.io/Cat-Calculator",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
@@ -19,7 +20,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+	  "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
